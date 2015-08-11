@@ -1,0 +1,9 @@
+extends layout.jade
+
+include  mixins/post_gallery.jade
+
+block head
+	script(src="index.js")
+
+block content
+	+post_gallery(posts)

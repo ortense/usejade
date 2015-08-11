@@ -1,0 +1,9 @@
+# Default
+[*.{js,json,css,html,hbs,ejs,md,jade}]
+charset = utf-8
+indent_style = tab
+indent_size = 4
+
+# Exceptions
+[*.{html,hbs,ejs,md,jade}]
+indent_size = 2

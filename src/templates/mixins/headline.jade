@@ -1,0 +1,9 @@
+mixin headline(post)
+	article.post
+		img.post-cover(src=post.cover, alt=post.title)
+		h1.post-title
+			a(href="/post/#{post.slug}.html")= post.title
+		p.post-author Por #{post.author}
+		p.post-tag-list
+			each tag in post.tag_list
+				a.post-tag(href="/tag/#{tag.slug}.html")= tag.name
